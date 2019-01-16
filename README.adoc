@@ -4,6 +4,8 @@
 toc::[]
 = Kiali UI
 
+image:https://badges.greenkeeper.io/josejulio/swsui.svg[link="https://greenkeeper.io/"]
+
 == Introduction
 
 A UI for the Kiali Istio Observability Project
