@@ -71,7 +71,7 @@
     "js-yaml": "3.12.1",
     "lodash": "4.17.11",
     "patternfly": "3.59.1",
-    "patternfly-react": "2.29.5",
+    "patternfly-react": "2.29.6",
     "react": "16.6.3",
     "react-ace": "6.2.0",
     "react-bootstrap": "0.32.4",
