@@ -7360,10 +7360,10 @@ patternfly-bootstrap-treeview@~2.1.0:
     bootstrap "3.4.x"
     jquery ">= 2.1.x"
 
-patternfly-react@2.29.5:
-  version "2.29.5"
-  resolved "https://registry.yarnpkg.com/patternfly-react/-/patternfly-react-2.29.5.tgz#f2535a31c618885b0dc71b5d22d7b614c2bc3e3e"
-  integrity sha512-A5vMSAzSusxG8vOClc4UxE1lZfyELHnnsY6liZa/EV6L1tJQAKvM04x+RcXevia2vP08VSneFy5KAVEyvjXuNg==
+patternfly-react@2.29.6:
+  version "2.29.6"
+  resolved "https://registry.yarnpkg.com/patternfly-react/-/patternfly-react-2.29.6.tgz#67ae3035e8eb61a3be74ff3f57905124b6827213"
+  integrity sha512-ISZpRyL9UOUCT+Esgh2CFEJ4OkFj5LgRdsGfcah7CEjbI5uy2/NT0RzU4jmu1S+WbpzLxD/7Yu94z33iGXxgCA==
   dependencies:
     bootstrap-slider-without-jquery "^10.0.0"
     breakjs "^1.0.0"
