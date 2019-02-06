@@ -7430,15 +7430,16 @@ patternfly-react-extensions@2.16.8:
     react-virtualized "9.x"
     unidiff "^1.0.1"
 
-patternfly-react@2.25.3:
-  version "2.25.3"
-  resolved "https://registry.yarnpkg.com/patternfly-react/-/patternfly-react-2.25.3.tgz#75993bab9810bab0a6c5fd6de49b1d6ed65d8daa"
-  integrity sha512-DLz1pmlLdoo5EuTRMOEd3SIHzui8tH+5pOzANNAztYWeUmQyl40Gk97CxHQaKf/cSayVz2zLTEZf5su9HSQGIw==
+patternfly-react@2.29.10:
+  version "2.29.10"
+  resolved "https://registry.yarnpkg.com/patternfly-react/-/patternfly-react-2.29.10.tgz#09826ca94bcd560ffa80ec4210b62ee42f704ad6"
+  integrity sha512-mQpn+aK96vCFX7OsrNAOyBfZVfB7/Wv9lhQ5e9YurOjeV/gVCxEXDZBA8jdGTh2eHWkTvcr8krNJoPtv3blLow==
   dependencies:
     bootstrap-slider-without-jquery "^10.0.0"
     breakjs "^1.0.0"
     classnames "^2.2.5"
     css-element-queries "^1.0.1"
+    lodash "^4.17.11"
     patternfly "^3.58.0"
     react-bootstrap "^0.32.1"
     react-bootstrap-switch "^15.5.3"
@@ -7450,6 +7451,7 @@ patternfly-react@2.25.3:
     react-motion "^0.5.2"
     reactabular-table "^8.14.0"
     recompose "^0.26.0"
+    uuid "^3.3.2"
   optionalDependencies:
     sortabular "^1.5.1"
     table-resolver "^3.2.0"
