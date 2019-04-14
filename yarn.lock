@@ -8394,10 +8394,12 @@ react-fontawesome@^1.6.1:
   dependencies:
     prop-types "^15.5.6"
 
-react-iframe@1.3.3:
-  version "1.3.3"
-  resolved "https://registry.yarnpkg.com/react-iframe/-/react-iframe-1.3.3.tgz#553f9e44204486ecddd4027d8bb647e2a132ffcc"
-  integrity sha512-W/Xs5wovFoqoj7HF0yy1R8gXDYzMAjsrpsTC/xkDzpcAYzanjD9MrWp3hri0DGqCtWsbqD2IHh29RuBlglSmsg==
+react-iframe@1.7.16:
+  version "1.7.16"
+  resolved "https://registry.yarnpkg.com/react-iframe/-/react-iframe-1.7.16.tgz#820cae25a5342c3fb201dc02571763b73ee810c7"
+  integrity sha512-tMph5QOcCynSldusHnGU5LavVVakt0YHRubWm4yFPHXqEgWznSQLDxY8DfX5pEpiGNRMBpKlrlRTZ15UqfLInQ==
+  dependencies:
+    object-assign "^4.1.1"
 
 react-is@^16.3.2, react-is@^16.6.0, react-is@^16.6.1, react-is@^16.7.0:
   version "16.7.0"
