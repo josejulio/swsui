@@ -94,7 +94,7 @@
     "reselect": "4.0.0",
     "ssri": "6.0.1",
     "typesafe-actions": "2.0.4",
-    "typestyle": "2.0.1",
+    "typestyle": "2.0.2",
     "visibilityjs": "2.0.2"
   },
   "devDependencies": {
