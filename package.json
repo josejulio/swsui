@@ -73,7 +73,7 @@
     "lodash": "4.17.11",
     "patternfly": "3.59.1",
     "patternfly-react": "2.25.3",
-    "patternfly-react-extensions": "2.16.8",
+    "patternfly-react-extensions": "2.18.1",
     "react": "16.6.3",
     "react-ace": "6.2.0",
     "react-bootstrap": "0.32.4",
