@@ -101,10 +101,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/utils/-/utils-0.8.2.tgz#576ff7fb1230185b619a75d258cbc98f0867a8dc"
   integrity sha512-rLu3wcBWH4P5q1CGoSSH/i9hrXs7SlbRLkoq9IGuoPYNGQvDJ3pt/wmOM+XgYjIDRMVIdkUWt0RsfzF50JfnCw==
 
-"@patternfly/patternfly@2.4.1":
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/@patternfly/patternfly/-/patternfly-2.4.1.tgz#2b82e946ec2cdf5a78535ba2b9d514151688dc2d"
-  integrity sha512-VoL6Fsid7scdsf1w8TZ9JckTjVIHzWQBMHptOv2jHjrLlxTwMGPmyh8AnvRYhqWa5nUSA//jZaR8vMyliJl9TQ==
+"@patternfly/patternfly@2.14.0":
+  version "2.14.0"
+  resolved "https://registry.yarnpkg.com/@patternfly/patternfly/-/patternfly-2.14.0.tgz#ca737b03a6c8aecce65662d52e0801d558fb06ff"
+  integrity sha512-ujZjwwJRRn1EUaewM0oK7x+6EuHIBGZNdxe9lUu9eOSg+E2U7k6WJIHG1ZYZxDIEjC7d3EkiMQA4gkzb9f3Luw==
 
 "@patternfly/react-core@3.2.6":
   version "3.2.6"
