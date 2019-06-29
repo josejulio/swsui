@@ -3056,10 +3056,10 @@ cssstyle@^1.0.0:
   dependencies:
     cssom "0.3.x"
 
-csstips@0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/csstips/-/csstips-0.3.0.tgz#e9a069363fbd53002ac4dd4221b5f4ad4e18f65c"
-  integrity sha512-Y9xM+P1ma92WZ9Czg3dKPJ96o5w5oc97R5iYTRojLGqorUPFgpkfofYJSoaSzaJTSB8SwU54jbwePhq1u3KXyw==
+csstips@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/csstips/-/csstips-1.0.0.tgz#10cf480657c7c9eb71834de5af8289ac321d3a44"
+  integrity sha512-3nygm9LepbUDvrauR4WWqZ5I6jLeVsLOpwj2CUB65d1QkmimYfW7dlcqZ5bahltagoswxcL2Bs/6EsfsU6N8gA==
 
 csstype@^2.2.0, csstype@^2.4.0, csstype@^2.5.1:
   version "2.6.0"
