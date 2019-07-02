@@ -105,7 +105,7 @@
     "visibilityjs": "2.0.2"
   },
   "devDependencies": {
-    "@patternfly/react-charts": "3.1.1",
+    "@patternfly/react-charts": "4.4.7",
     "@types/enzyme": "3.1.15",
     "@types/jest": "23.3.10",
     "@types/lodash": "4.14.123",
