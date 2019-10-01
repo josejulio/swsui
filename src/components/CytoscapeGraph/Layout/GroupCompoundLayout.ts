@@ -35,7 +35,6 @@
 export const COMPOUND_PARENT_NODE_CLASS = '__compoundLayoutParentNodeClass';
 
 const NAMESPACE_KEY = 'group_compound_layout';
-const CHILDREN_KEY = NAMESPACE_KEY + 'children';
 const STYLES_KEY = NAMESPACE_KEY + 'styles';
 const RELATIVE_POSITION_KEY = NAMESPACE_KEY + 'relative_position';
 
@@ -173,28 +172,33 @@ export default class GroupCompoundLayout {
       // (1.b) Set the size
       parent.style(newStyles);
       // Save the children as jsons in the parent scratchpad for later
-      parent.scratch(CHILDREN_KEY, parent.children().jsons());
     });
 
     //  Remove the children and its edges and add synthetic edges for every edge that touches a child node.
     let syntheticEdges = this.cy.collection();
     // Removed elements are being stored because later we will add them back.
-    const elementsToRemove = parents.children().reduce((children, child) => {
-      children.push(child);
-      return children.concat(
-        child.connectedEdges().reduce((edges, edge) => {
-          // (1.c) Create synthetic edges.
-          const syntheticEdge = this.syntheticEdgeGenerator.getEdge(edge.source(), edge.target());
-          if (syntheticEdge) {
-            syntheticEdges = syntheticEdges.add(this.cy.add(syntheticEdge));
-          }
-          edges.push(edge);
-          return edges;
-        }, [])
-      );
-    }, []);
+    const edgesMap: Record<string, boolean> = {};
+    const elementsToRemove = this.cy.collection().add(
+      parents.children().reduce((children, child) => {
+        children.push(child);
+        return children.concat(
+          child.connectedEdges().reduce((edges, edge) => {
+            if (!edgesMap[edge.id()]) {
+              edgesMap[edge.id()] = true;
+              // (1.c) Create synthetic edges.
+              const syntheticEdge = this.syntheticEdgeGenerator.getEdge(edge.source(), edge.target());
+              if (syntheticEdge) {
+                syntheticEdges = syntheticEdges.add(this.cy.add(syntheticEdge));
+              }
+              edges.push(edge);
+            }
+            return edges;
+          }, [])
+        );
+      }, [])
+    );
     // (1.d) Remove children and edges that touch a child node.
-    this.cy.remove(this.cy.collection().add(elementsToRemove));
+    this.cy.remove(elementsToRemove);
 
     const layout = this.cy.layout({
       // Create a new layout
@@ -211,12 +215,12 @@ export default class GroupCompoundLayout {
       this.cy.startBatch();
       // (3) Remove synthetic edges
       this.cy.remove(syntheticEdges);
+      // (4.a) Add back the children and the edges
+      elementsToRemove.restore();
 
-      // Add and position the children nodes according to the layout
+      // Position the children nodes according to the layout
       parents.each(parent => {
-        // (4.a) Add back the children and the edges
-        this.cy.add(parent.scratch(CHILDREN_KEY));
-        // (4.b) Layout the children using our compound layout.
+        // (4.b) Layout the children using our compound layout data.
         parent.children().each(child => {
           const relativePosition = child.data(RELATIVE_POSITION_KEY);
           child.relativePosition(relativePosition);
@@ -227,16 +231,8 @@ export default class GroupCompoundLayout {
         parent.removeClass(COMPOUND_PARENT_NODE_CLASS);
 
         // Discard the saved values
-        parent.removeScratch(CHILDREN_KEY);
         parent.removeScratch(STYLES_KEY);
       });
-      // (4.a) Add the real edges, we already added the children nodes.
-      this.cy.add(
-        this.cy
-          .collection()
-          .add(elementsToRemove)
-          .edges()
-      );
       this.cy.endBatch();
     });
     layout.run();
