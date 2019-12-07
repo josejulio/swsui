@@ -118,7 +118,7 @@
     "visibilityjs": "2.0.2"
   },
   "devDependencies": {
-    "@types/enzyme": "3.10.3",
+    "@types/enzyme": "3.10.4",
     "@types/jest": "23.3.10",
     "@types/lodash": "4.14.123",
     "@types/node": "11.11.4",
