@@ -100,7 +100,7 @@
     "react-dom": "16.9.0",
     "react-draggable": "3.2.1",
     "react-flexview": "4.0.3",
-    "react-floater": "0.6.4",
+    "react-floater": "0.7.0",
     "react-iframe": "1.5.0",
     "react-redux": "7.1.0",
     "react-resize-detector": "3.4.0",
