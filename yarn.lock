@@ -4852,10 +4852,10 @@ cytoscape-dagre@2.2.2:
   dependencies:
     dagre "^0.8.2"
 
-cytoscape-popper@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/cytoscape-popper/-/cytoscape-popper-1.0.2.tgz#0c2bab6cf5ca504144c7eb42fe44638ff0e3bb9c"
-  integrity sha512-1ihKND9OTgG24U/vBzUuOEsMem9gAek83b98QjP7piKkyRdpPwwxZFVDuDCsjWendNocAKFOsxHDF7RD3J5/Pw==
+cytoscape-popper@1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/cytoscape-popper/-/cytoscape-popper-1.0.5.tgz#753f026a51b3acce92ca2fb1cf4fceea9b662d74"
+  integrity sha512-d6EWrjzaCjMA0UPufRVF5RaZa4o0rJW9m8WPsd4pyU/+fDMF3F5NNnxUW3cQbEpkIERBJUbtK6O4YO2I1TDBKA==
   dependencies:
     popper.js "^1.0.0"
 
